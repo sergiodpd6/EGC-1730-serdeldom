@@ -88,7 +88,7 @@ class Voting(models.Model):
         response = mods.post('mixnet', entry_point=decrypt_url, baseurl=auth.url, json=data,
                 response=True)
 
-        if response.status_code != 200:
+        if response.status_code != "200":
             # TODO: manage error
             pass
 
