@@ -20,8 +20,8 @@ global:
   - PGPORT=5432
 
 before_script:
- - rm -f local_settings.py
- - cp local_settings.travis.py local_settings.py
+ - rm -f local_settings.example.py
+ - cp local_settings.travis.py local_settings.example.py
  - psql -c "create user decide with password 'decide'" 
  - psql -c "create database decide owner decide"
  - python manage.py migrate
