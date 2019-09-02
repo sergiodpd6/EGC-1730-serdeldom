@@ -10,10 +10,10 @@ install:
 - pip install psycopg2-binary
 services:
   - postgresql
-
 branches:
 only:
 - master
+
 addons:
   postgresql: "9.6"
 global:
@@ -28,5 +28,6 @@ before_script:
 
 script: 
 - python3 manage.py test
+
 
 
