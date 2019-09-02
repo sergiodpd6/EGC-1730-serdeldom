@@ -13,7 +13,7 @@ services:
 
 branches:
 only:
-master
+- master
 addons:
   postgresql: "9.6"
 global:
